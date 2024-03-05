@@ -1,0 +1,523 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'gilroy';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    overflow: hidden;
+    position: relative;
+}
+
+#nav-bar{
+    width: 100vw;
+    height: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.217),transparent);
+    position: fixed;
+    z-index: 9;
+    display: flex;
+}
+
+#lft-nav{
+    width: 50%;
+    height: 100%;
+    padding: 38px 50px;
+}
+
+#lft-nav img{
+    width: 200px;
+    opacity: 0;
+}
+
+#rgt-nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 80px;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+#rgt-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(241, 234, 234);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#eg{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+
+#page1{
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(https://www.koni-jordan.com/files/kjordan/images/Koni-Jordan/Koni%20Jordan_0653.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#scroll{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 3%;
+    bottom: 6.5%;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.circle{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: #FF073A;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+
+#circle1{
+    left: 21.2%;
+}
+
+#circle2{
+    left: 52%;
+}
+
+#page2{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#page2-img-wrapper{
+    height: 100vh;
+    width: 200vw;
+    background-image: url(koni\ jordan\ img/svgexport-7.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    transform: translate(-100%);
+    scale: 1.2;
+}
+
+#p2-lft{
+    width: 50%;
+    height: 100%;
+    background-color: #FF073A;
+    padding: 100px 50px;
+}
+
+.h1{
+    font-size: 95px;
+    font-weight: 900;
+    color: white;
+    line-height: .9;
+}
+
+.sp{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 55px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.p{
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.more{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.target{
+    width: 40px;
+}
+
+#p2-rgt{
+    width: 50%;
+    height: 100%;
+    background-color: #FF073A;
+}
+
+#p2-rgt img{
+    height: 90%;
+    margin-top: 20px;
+}
+
+#page3{
+    background-color: #000000;
+    display: flex;
+}
+
+#p3-lft{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+#p3-lft-text{
+    width: 100%;
+    height: 87%;
+    position: absolute;
+    background-color: #000;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    padding: 100px 50px;
+}
+
+#p3-lft-text>h1{
+    color: #00FFBA;
+}
+
+#p3-lft-text>span{
+    color: #00FFBA;
+}
+
+#p3-rgt{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-left: 100%;
+}
+
+#p3-rgt-img-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    gap:20px;
+}
+
+.p3-rgt-img{
+    height: 650px;
+    width: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img1{
+    background-image: url(https://www.koni-jordan.com/assets/images/f/Art%20Shoot2-491-41e5f0fc.jpg);
+}
+
+#img2{
+    background-image: url(https://www.koni-jordan.com/assets/images/4/Art%20Shoot2-467-71f8c642.jpg);
+}
+
+#img3{
+    background-image: url(https://www.koni-jordan.com/assets/images/f/Art%20Shoot2-483-f59ff685.jpg);
+}
+
+#img4{
+    background-image: url(https://www.koni-jordan.com/assets/images/9/Art%20Shoot2-477-dbb98f95.jpg);
+}
+
+#img5{
+    background-color: #000;
+}
+
+#page4{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+#page4 h1{
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1;
+    color: #00FFBA;
+}
+
+#page4-img-wrapper{
+    height: 100vh;
+    width: 200vw;
+    background-image: url(koni\ jordan\ img/svgexport-8.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    transform: translate(-100%);
+    scale: 1.2;
+}
+
+#page5{
+    background-color: #000000;
+    display: flex;
+}
+
+#p5-lft{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+#p5-lft-text{
+    width: 100%;
+    height: 87%;
+    position: absolute;
+    background-color: #000;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    padding: 100px 50px;
+}
+
+#p5-lft-text>h1{
+    color: #D800FF;
+}
+
+#p5-lft-text>span{
+    color:#D800FF;
+}
+
+#p5-rgt{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-left: 100%;
+}
+
+#p5-rgt-img-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    gap:20px;
+}
+
+.p5-rgt-img{
+    height: 650px;
+    width: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img1{
+    background-image: url(https://www.koni-jordan.com/assets/images/f/Art%20Shoot2-491-41e5f0fc.jpg);
+}
+
+#img2{
+    background-image: url(https://www.koni-jordan.com/assets/images/4/Art%20Shoot2-467-71f8c642.jpg);
+}
+
+#img3{
+    background-image: url(https://www.koni-jordan.com/assets/images/f/Art%20Shoot2-483-f59ff685.jpg);
+}
+
+#img4{
+    background-image: url(https://www.koni-jordan.com/assets/images/9/Art%20Shoot2-477-dbb98f95.jpg);
+}
+
+#img5{
+    background-color: #000;
+}
+
+#page6{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#page6 h1{
+    line-height: 1;
+    font-size: 140px;
+    font-weight: 900;
+    color: yellow;
+    z-index: 9;
+}
+
+#page6 p{
+    margin-top: 20px;
+    font-size: 25px;
+    width: 40%;
+    font-weight: 400;
+    margin-left: 58px;
+    z-index: 9
+}
+
+#page6 #kiss{
+    position: absolute;
+    width: 300px;
+    top: 20%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+#e1{
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(30deg);
+    top: 30%;
+    left: 70%;
+    z-index: 1;
+    display: none;
+}
+
+#e2{
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(20deg);
+    top: 70%;
+    left: 30%;
+    z-index: 1;
+    display: none;
+}
+
+#e3{
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(165deg);
+    top: 20%;
+    left: 50%;
+    z-index: 1;
+    display: none;
+}
+
+#e4{
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(165deg);
+    top: 60%;
+    left: 50%;
+    z-index: 1;
+    display: none;
+}
+
+#e5{
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(100deg);
+    top: 30%;
+    left: 30%;
+    z-index: 1;
+    display: none;
+}
+
+#e6{
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(280deg);
+    top: 70%;
+    left: 70%;
+    z-index: 1;
+    display: none;
+}
+
+#page7{
+    height: 15vh;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#p7-lft{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 200px;
+}
+
+#p7-cnt{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#e-r-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#reg{
+    border: 1px solid #fff;
+    padding: 12px 25px;
+}
+
+#p7-rgt{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 200px;
+}
+
+#p7-rgt i{
+    font-size: 30px;
+    color: #fff;
+}
+
+#email{
+    border: 1px solid #fff;
+    padding: 12px 60px;
+}
